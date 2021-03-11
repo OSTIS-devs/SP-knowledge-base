@@ -1,4 +1,5 @@
 subject_domain_isa88_physical
+<- sc_node_struct;
 => nrel_main_idtf: [Предметная область физических моделей рецептурного производства] (* <- lang_ru;; *);
 => nrel_main_idtf: [Subject domain of physical models of batch manufacturing enterprises] (* <- lang_en;; *);
 => nrel_main_idtf: [Предметна область фізичних моделей рецептурного виробництва] (* <- lang_uk;; *);
