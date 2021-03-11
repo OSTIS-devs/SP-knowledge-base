@@ -1,3 +1,6 @@
+lang_de
+<-sc_node_not_relation;;
+
 lang_ru
 => nrel_main_idtf:
    [Russisch Sprache] (* <- lang_de;; *);;
