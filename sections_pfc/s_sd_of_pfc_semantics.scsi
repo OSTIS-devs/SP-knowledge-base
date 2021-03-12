@@ -548,7 +548,7 @@ nrel_explicit_transition
 		...
 		(*
 		-> rrel_example: 
-			[Явный переход* — бинарное отношение, вторым компонентом связки которого является процедурный элемент, выполнение 				которого начнётся после выполнения процедурного элемента, являющегося первым компонентом связки и проверки некоторого 				условия.]
+			[Явный переход* — бинарное отношение, вторым компонентом связки которого является процедурный элемент, выполнение которого начнётся после выполнения процедурного элемента, являющегося первым компонентом связки и проверки некоторого 				условия.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -569,8 +569,9 @@ nrel_implisit_transition
 		...
 		(*
 		-> rrel_example: 
-			[Неявный переход* — бинарное отношение, первым компонентом связки которого является процедурный элемент, после 				выполнения которого начнётся выполнение процедурного элемента, являющегося вторым компонентом связки отношения.]
+			[Неявный переход* — бинарное отношение, первым компонентом связки которого является процедурный элемент, после выполнения которого начнётся выполнение процедурного элемента, являющегося вторым компонентом связки отношения.]
 			(* <- lang_ru;; *);;
+		
 		*);;
 	*);;
 
@@ -578,178 +579,298 @@ sc_node_not_relation -> preparation_cottage_cheese_Khutorok;;
 preparation_cottage_cheese_Khutorok
 => nrel_main_idtf:
 	[мастер-рецепт для приготовления творога Хуторок]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[preparation cottage cheese Khutorok]
+	(* <- lang_en;; *);
+	[майстер-рецепт для приготування сиру Хуторок]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> preparation_of_milk_mixture;;
 preparation_of_milk_mixture
 => nrel_main_idtf:
 	[приготовление молочной смеси]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[preparation of milk mixture]
+	(* <- lang_en;; *);
+	[приготування молочної суміші]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> preparation_of_curd_mass;;
 preparation_of_curd_mass
 => nrel_main_idtf:
 	[приготовление творожной массы]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[preparation of curd mass]
+	(* <- lang_en;; *);
+	[приготування сирної маси]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> forming_of_curd_mass;;
 forming_of_curd_mass
 => nrel_main_idtf:
 	[формовка творожной массы]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[forming of curd mass]
+	(* <- lang_en;; *);
+	[формування сирної маси ]
+	(* <- lang_uk;; *);;
 		
 sc_node_not_relation -> filling_the_curd_mass;;
 filling_the_curd_mass
 => nrel_main_idtf:
 	[фасовка творожной массы]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[filling the curd mass]
+	(* <- lang_en;; *);
+	[фасування сирної маси]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> recipe_procedure_preparation_curd_mass;;
 recipe_procedure_preparation_curd_mass
 => nrel_main_idtf:
 	[рецептурная процедура для приготовления творожной массы]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[recipe procedure preparation curd mass]
+	(* <- lang_en;; *);
+	[рецептурная процедура для приготування сирної маси]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> selection_of_equipment;;
 selection_of_equipment
 => nrel_main_idtf:
 	[выбор оборудования]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[selection of equipment]
+	(* <- lang_en;; *);
+	[вибір обладнання]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> supply_line;;
 supply_line
 => nrel_main_idtf:
 	[линия подачи]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[supply line]
+	(* <- lang_en;; *);
+	[лінія подачі]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> coagulator;;
 coagulator
 => nrel_main_idtf:
 	[коагулятор]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[coagulator]
+	(* <- lang_en;; *);
+	[коагулятор]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> filling;;
 filling
 => nrel_main_idtf:
 	[наполнение]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[filling]
+	(* <- lang_en;; *);
+	[наповнення]
+	(* <- lang_uk;; *);;
 		
 sc_node_not_relation -> cooking;;
 cooking
 => nrel_main_idtf:
 	[приготовление]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[cooking]
+	(* <- lang_en;; *);
+	[приготування]
+	(* <- lang_uk;; *);;
 		
 sc_node_not_relation -> delivery;;
 delivery
 => nrel_main_idtf:
 	[выдача]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[delivery]
+	(* <- lang_en;; *);
+	[видача]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> washing;;
 washing
 => nrel_main_idtf:
 	[мойка]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[washing]
+	(* <- lang_en;; *);
+	[прання]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> operational_procedure_serum_separation;;
 operational_procedure_serum_separation
 => nrel_main_idtf:
 	[операционная процедура для операции "Отделение сыворотки"]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[operational procedure "Serum separation"]
+	(* <- lang_en;; *);
+	[операційна процедура для операції "Відділення сироватки"]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> operational_procedure_serum_pumping;;
 operational_procedure_serum_pumping
 => nrel_main_idtf:
 	[операционная процедура для операции "Откачка сыворотки"]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[operational procedure "Serum pumping"]
+	(* <- lang_en;; *);
+	[операційна процедура для операції "Відкачування сироватки" ]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> operational_procedure;;
 operational_procedure
 => nrel_main_idtf:
 	[операционная процедура]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[operational procedure]
+	(* <- lang_en;; *);
+	[оперативна процедура]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> heating;;
 heating
 => nrel_main_idtf:
 	[подогрев]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[heating]
+	(* <- lang_en;; *);
+	[опаленне]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> mixing;;
 mixing
 => nrel_main_idtf:
 	[перемешивание]
-	(* <- lang_ru;; *);;		
+	(* <- lang_ru;; *);
+	[mixing]
+	(* <- lang_en;; *);
+	[змішування]
+	(* <- lang_uk;; *);;		
 
 sc_node_not_relation -> temperature;;
 temperature
 => nrel_main_idtf:
 	[температура]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[temperature]
+	(* <- lang_en;; *);
+	[температури]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> direction;;
 direction
 => nrel_main_idtf:
 	[направление]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[direction]
+	(* <- lang_en;; *);
+	[напрямку]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> time;;
 time
 => nrel_main_idtf:
 	[время]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[time]
+	(* <- lang_en;; *);
+	[час]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> required_temperature_check;;
 required_temperature_check
 => nrel_main_idtf:
 	[проверка температуры]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[required temperature check]
+	(* <- lang_en;; *);
+	[перевірка температури]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> unit_procedure_preparation_curd_mass;;
 unit_procedure_preparation_curd_mass
 => nrel_main_idtf:
 	[аппаратная процедура для приготовления творожной массы]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[unit procedure preparation curd mass]
+	(* <- lang_en;; *);
+	[апаратна процедура для приготування сирної маси]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> overtemperature_check;;
 overtemperature_check
 => nrel_main_idtf:
 	[проверка на превышение температуры]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[overtemperature check]
+	(* <- lang_en;; *);
+	[перевірка на перевищення температури]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> leaven_introduction;;
 leaven_introduction
 => nrel_main_idtf:
 	[внесение закваски]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[leaven introduction]
+	(* <- lang_en;; *);
+	[внесення закваски ]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> leavening;;
 leavening
 => nrel_main_idtf:
 	[заквашивание]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[leavening]
+	(* <- lang_en;; *);
+	[заквашування]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> souring;;
 souring
 => nrel_main_idtf:
 	[сквашивание]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[souring]
+	(* <- lang_en;; *);
+	[сквашивание]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> cutting;;
 cutting
 => nrel_main_idtf:
 	[разрезка]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[cutting]
+	(* <- lang_en;; *);
+	[розрізання]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> decision_about_necessity_mixing;;
 decision_about_necessity_mixing
 => nrel_main_idtf:
 	[решение о необходимости вымешивать]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[the decision to knead]
+	(* <- lang_en;; *);
+	[рішення про необхідність вимішувати]
+	(* <- lang_uk;; *);;
 
 sc_node_not_relation -> readiness_for_delivery;;
 readiness_for_delivery
 => nrel_main_idtf:
 	[готов к выдаче]
-	(* <- lang_ru;; *);;
+	(* <- lang_ru;; *);
+	[ready to issue]
+	(* <- lang_en;; *);
+	[готово до видачі]
+	(* <- lang_uk;; *);;
