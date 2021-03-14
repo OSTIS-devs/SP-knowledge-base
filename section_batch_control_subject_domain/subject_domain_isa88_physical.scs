@@ -386,4 +386,17 @@ nrel_contains
 			(* <- lang_uk;; *);;
 		*);;
 	*);
-=> nrel_first_domain: nrel_second_domain: equipment_entity;;
+=> nrel_first_domain: nrel_second_domain: equipment_entity;
+=> nrel_definitional_domain: equipment_entity;;
+
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_contains;;
+	<- arity;;
+*);;
+
+oriented_relation -> nrel_contains;;
+reflexive_relation -|> nrel_contains;;
+transitive_relation -> nrel_contains;;
+symmetric_relation -|> nrel_contains;;

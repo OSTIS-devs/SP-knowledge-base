@@ -59,7 +59,7 @@ sd_of_pfc_semantics
 	decision_about_necessity_mixing;		
 	readiness_for_delivery;
 -> rrel_explored_relation: 
-	pfc_relation;
+	nrel_pfc_relation;
 	nrel_order_of_execution;
 	nrel_synchronization_element_link;
 	nrel_one_way_link;
@@ -268,9 +268,9 @@ non_atomic_procedural_element
 => nrel_main_idtf:
 	[неатомарный процедурный элемент]
 	(* <- lang_ru;; *);
-	[non-atomic procedural element ]
+	[non-atomic procedural element]
 	(* <- lang_en;; *);
-	[неатомарний процедурний елемент ]
+	[неатомарний процедурний елемент]
 	(* <- lang_uk;; *);
 <= nrel_subdividing:
 {
@@ -293,11 +293,11 @@ non_atomic_procedural_element
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[Non-atomic procedural element - a procedural element that contains other procedural elements within it. ]
+			[Non-atomic procedural element - a procedural element that contains other procedural elements within it.]
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Неатомарний процедурний елемент - процедурний елемент, який містить в собі інші процедурні елементи. ]
+			[Неатомарний процедурний елемент - процедурний елемент, який містить в собі інші процедурні елементи.]
 			(* <- lang_uk;; *);;
 		*);;
 	*);;
@@ -635,8 +635,8 @@ recipe_procedure
 		*);;
 	*);;
 
-sc_node_norole_relation -> pfc_relation;;
-pfc_relation
+sc_node_norole_relation -> nrel_pfc_relation;;
+nrel_pfc_relation
 => nrel_main_idtf:
 	[связь языка PFC*]
 	(* <- lang_ru;; *);
@@ -654,20 +654,32 @@ pfc_relation
 		<= nrel_sc_text_translation: 
 		...
 		(*
-		-> rrel_example: 
-			[Связь языка PFC* — бинарное отношение, элементами связки которого являются элементы языка PFC.]
+		-> rrel_example:
+			"file://content_html/explanation_for_nrel_pfc_relation_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[PFC link* is a binary relation whose linking elements are PFC language elements. ]
+			"file://content_html/explanation_for_nrel_pfc_relation_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Зв'язок мови PFC* - бінарне відношення, елементами зв'язки якого є елементи мови PFC.]
+			"file://content_html/explanation_for_nrel_pfc_relation_uk.html"
 			(* <- lang_uk;; *);;
 
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: pfc_element;
+=> nrel_definitional_domain: pfc_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_pfc_relation;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_pfc_relation;;
+reflexive_relation -|> nrel_pfc_relation;;
+transitive_relation -|> nrel_pfc_relation;;
+symmetric_relation -|> nrel_pfc_relation;;
 
 sc_node_norole_relation -> nrel_order_of_execution;;
 nrel_order_of_execution
@@ -691,18 +703,30 @@ nrel_order_of_execution
 		...
 		(*
 		-> rrel_example: 
-			[Порядок выполнения* — бинарное отношение, первым элементом связки которого является элемент языка PFC, который должен 				быть выполнен раньше элемента языка PFC, находящегося на месте второго элемента связки.]
+			"file://content_html/explanation_for_nrel_order_of_execution_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[Execution order* is a binary relation, the first linkage element of which is the PFC language element, which must be executed before the PFC language element in place of the second linkage element. ]
+			"file://content_html/explanation_for_nrel_order_of_execution_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Порядок виконання* - бінарне відношення, першим елементом зв'язки якого є елемент мови PFC, який повинен бути виконаний раніше елемента мови PFC, що знаходиться на місці другого елементу зв'язки. ]
+			"file://content_html/explanation_for_nrel_order_of_execution_uk.html"
 			(* <- lang_uk;; *);;
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: pfc_element;
+=> nrel_definitional_domain: pfc_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_order_of_execution;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_order_of_execution;;
+reflexive_relation -|> nrel_order_of_execution;;
+transitive_relation -> nrel_order_of_execution;;
+symmetric_relation -|> nrel_order_of_execution;;
 
 sc_node_norole_relation -> nrel_synchronization_element_link;;
 nrel_synchronization_element_link
@@ -724,19 +748,31 @@ nrel_synchronization_element_link
 		...
 		(*
 		-> rrel_example: 
-			[Ссылка на элемент синхронизации* — бинарное отношение, компонентами связок которого являются знаки элементов 				синхронизации.]
+			"file://content_html/explanation_for_nrel_synchronization_element_link_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[A reference to a synchronization element* is a binary relation, the components of the bundles of which are the signs of the synchronization elements. ]
+			"file://content_html/explanation_for_nrel_synchronization_element_link_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Посилання на елемент синхронізації* - бінарне відношення, компонентами зв'язок якого є знаки елементів синхронізації.]
+			"file://content_html/explanation_for_nrel_synchronization_element_link_uk.html"
 			(* <- lang_uk;; *);;
 
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: synchronization_element;
+=> nrel_definitional_domain: synchronization_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_synchronization_element_link;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_synchronization_element_link;;
+reflexive_relation -|> nrel_synchronization_element_link;;
+transitive_relation -|> nrel_synchronization_element_link;;
+symmetric_relation -|> nrel_synchronization_element_link;;
 
 sc_node_norole_relation -> nrel_one_way_link;;
 nrel_one_way_link
@@ -755,18 +791,30 @@ nrel_one_way_link
 		...
 		(*
 		-> rrel_example: 
-			[Односторонняя ссылка* — бинарное ориентированное отношение, первым компонентом связки которого является знак элемента 				синхронизации, со стороны которого осуществляется осуществляется передача материала, вторым - знак элемента 				синхронизации, принимающего этот материал.]
+			"file://content_html/explanation_for_nrel_one_way_link_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[A one-way link* is a binary oriented relation, the first linking component of which is the sign of the synchronization element, from the side of which the material is transmitted, the second is the sign of the synchronization element that receives this material.]
+			"file://content_html/explanation_for_nrel_one_way_link_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Одностороння посилання * - бінарне орієнтоване ставлення, першим компонентом зв'язки якого є знак елемента синхронізації, з боку якого здійснюється здійснюється передача матеріалу, другим - знак елемента синхронізації, що приймає цей матеріал. ]
+			"file://content_html/explanation_for_nrel_one_way_link_uk.html"
 			(* <- lang_uk;; *);;
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: synchronization_element;
+=> nrel_definitional_domain: synchronization_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_one_way_link;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_one_way_link;;
+reflexive_relation -|> nrel_one_way_link;;
+transitive_relation -|> nrel_one_way_link;;
+symmetric_relation -|> nrel_one_way_link;;
 
 sc_node_norole_relation -> nrel_two_way_link;;
 nrel_two_way_link
@@ -775,7 +823,7 @@ nrel_two_way_link
 	(* <- lang_ru;; *);
 	[two-way link*]
 	(* <- lang_en;; *);
-	[Двостороння посилання*]
+	[двостороння посилання*]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -785,19 +833,31 @@ nrel_two_way_link
 		...
 		(*
 		-> rrel_example: 
-			[Двусторонняя ссылка* — бинарное неориентированное отношение, компонентами связок которого являются элементы 				синхронизации, осуществляющие одновременно передачу и приёмку материала.]
+			"file://content_html/explanation_for_nrel_two_way_link_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[A two-way link* is a binary undirected relation, the components of the bundles of which are synchronization elements that simultaneously transmit and receive material. ]
+			"file://content_html/explanation_for_nrel_two_way_link_uk.html"
 			(* <- lang_uk;; *);;
 
 		-> rrel_example: 
-			[Двостороння посилання* - бінарне неорієнтоване ставлення, компонентами зв'язок якого є елементи синхронізації, які здійснюють одночасно передачу і приймання матеріалу.]
-			(* <- lang_uk;; *);;
+			"file://content_html/explanation_for_nrel_two_way_link_en.html"
+			(* <- lang_en;; *);;
 			
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: synchronization_element;
+=> nrel_definitional_domain: synchronization_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_two_way_link;;
+	<- arity;;
+*);;
+oriented_relation -|> nrel_two_way_link;;
+reflexive_relation -|> nrel_two_way_link;;
+transitive_relation -> nrel_two_way_link;;
+symmetric_relation -> nrel_two_way_link;;
 
 sc_node_norole_relation -> nrel_transition_condition;;
 nrel_transition_condition
@@ -816,18 +876,28 @@ nrel_transition_condition
 		...
 		(*
 		-> rrel_example: 
-			[Условие перехода* — бинарное отношение, первым компонентом связок которого является связка отношения явный переход*, 				вторым - знак структуры, содержащей ожидаемый результат выполнения процедуры.]
+			"file://content_html/explanation_for_nrel_transition_condition_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[The transition condition* is a binary relation, the first component of the connectives of which is the explicit transition * relation, and the second is the sign of the structure containing the expected result of the procedure. ]
+			"file://content_html/explanation_for_nrel_transition_condition_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Умова переходу* - бінарне відношення, першим компонентом зв'язок якого є зв'язка відносини явний перехід *, другим - знак структури, що містить очікуваний результат виконання процедури.]
+			"file://content_html/explanation_for_nrel_transition_condition_uk.html"
 			(* <- lang_uk;; *);;
 		*);;
 	*);;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_transition_condition;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_transition_condition;;
+reflexive_relation -|> nrel_transition_condition;;
+transitive_relation -|> nrel_transition_condition;;
+symmetric_relation -|> nrel_transition_condition;;
 
 sc_node_norole_relation -> nrel_explicit_transition;;
 nrel_explicit_transition
@@ -853,19 +923,31 @@ nrel_explicit_transition
 		...
 		(*
 		-> rrel_example: 
-			[Явный переход* — бинарное отношение, вторым компонентом связки которого является процедурный элемент, выполнение которого начнётся после выполнения процедурного элемента, являющегося первым компонентом связки и проверки некоторого 				условия.]
+			"file://content_html/explanation_for_nrel_explicit_transition_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[Explicit transition* is a binary relation, the second component of the linkage of which is a procedural element, the execution of which will begin after the execution of the procedural element, which is the first component of the linkage and a certain condition is checked. ]
+			"file://content_html/explanation_for_nrel_explicit_transition_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Явний перехід* - бінарне відношення, другим компонентом зв'язки якого є процедурний елемент, виконання якого почнеться після виконання процедурного елемента, що є першим компонентом зв'язки і перевірки деякої умови. ]
+			"file://content_html/explanation_for_nrel_explicit_transition_uk.html"
 			(* <- lang_uk;; *);;
 		
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: procedural_element;
+=> nrel_definitional_domain: procedural_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_explicit_transition;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_explicit_transition;;
+reflexive_relation -|> nrel_explicit_transition;;
+transitive_relation -|> nrel_explicit_transition;;
+symmetric_relation -|> nrel_explicit_transition;;
 
 sc_node_norole_relation -> nrel_implisit_transition;;
 nrel_implisit_transition
@@ -892,20 +974,32 @@ nrel_implisit_transition
 		<= nrel_sc_text_translation: 
 		...
 		(*
-		-> rrel_example: 
-			[Неявный переход* — бинарное отношение, первым компонентом связки которого является процедурный элемент, после выполнения которого начнётся выполнение процедурного элемента, являющегося вторым компонентом связки отношения.]
+		-> rrel_example:
+			"file://content_html/explanation_for_nrel_implisit_transition_ru.html"
 			(* <- lang_ru;; *);;
 
 		-> rrel_example: 
-			[An implicit transition* - is a binary relation, the first component of the linkage of which is a procedural element, after the execution of which the procedural element will start executing, which is the second component of the linkage of the relation. ]
+			"file://content_html/explanation_for_nrel_implisit_transition_en.html"
 			(* <- lang_en;; *);;
 
 		-> rrel_example: 
-			[Неявний перехід * - бінарне відношення, першим компонентом зв'язки якого є процедурний елемент, після виконання якого почнеться виконання процедурного елемента, що є другим компонентом зв'язки відносини.]
+			"file://content_html/explanation_for_nrel_implisit_transition_uk.html"
 			(* <- lang_uk;; *);;
 		
 		*);;
-	*);;
+	*);
+=> nrel_first_domain: nrel_second_domain: procedural_element;
+=> nrel_definitional_domain: procedural_element;;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_implisit_transition;;
+	<- arity;;
+*);;
+oriented_relation -> nrel_implisit_transition;;
+reflexive_relation -|> nrel_implisit_transition;;
+transitive_relation -|> nrel_implisit_transition;;
+symmetric_relation -|> nrel_implisit_transition;;
 
 sc_node_not_relation -> preparation_cottage_cheese_Khutorok;;
 preparation_cottage_cheese_Khutorok

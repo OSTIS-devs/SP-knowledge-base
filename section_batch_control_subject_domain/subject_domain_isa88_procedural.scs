@@ -437,4 +437,17 @@ nrel_execution_order
 			(* <- lang_uk;; *);;
 		*);;
 	*);
-=> nrel_first_domain: nrel_second_domain: procedural_element;;
+=> nrel_first_domain: nrel_second_domain: procedural_element;
+=> nrel_definitional_domain: procedural_element;;
+
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_execution_order;;
+	<- arity;;
+*);;
+
+oriented_relation -> procedural_element;;
+reflexive_relation -> procedural_element;;
+transitive_relation -|> procedural_element;;
+symmetric_relation -|> procedural_element;;

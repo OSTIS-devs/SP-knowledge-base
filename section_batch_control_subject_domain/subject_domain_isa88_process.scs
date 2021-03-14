@@ -156,4 +156,17 @@ nrel_process_element_link
 			(* <- lang_uk;; *);;
 		*);;
 	*);
-=> nrel_first_domain: nrel_second_domain: process_element;;
+=> nrel_first_domain: nrel_second_domain: process_element;
+=> nrel_definitional_domain: process_element;;
+
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_process_element_link;;
+	<- arity;;
+*);;
+
+oriented_relation -> nrel_process_element_link;;
+reflexive_relation -|> nrel_process_element_link;;
+transitive_relation -|> nrel_process_element_link;;
+antisymmetric_relation -> nrel_process_element_link;;
