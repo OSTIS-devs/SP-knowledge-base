@@ -12,7 +12,7 @@ nrel_summary
 
 rrel_key_sc_element
 => nrel_main_idtf:
-   [key-sc-element'] (* <- lang_de;; *);;
+   [key-sc-element'] (* <- lang_de;; *);; 
 
 ui_start_sc_element
 => nrel_main_idtf:
