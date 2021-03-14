@@ -6,6 +6,10 @@ lang_en
 => nrel_main_idtf:
    [Англійська мова] (* <- lang_uk;; *);;
 
+lang_de
+=> nrel_main_idtf:
+   [Німецька мова] (* <- lang_uk;; *);;
+
 nrel_summary
 => nrel_main_idtf:
    [анотація*] (* <- lang_uk;; *);;
