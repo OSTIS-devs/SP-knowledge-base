@@ -2,6 +2,10 @@ sd_of_pfc_texts
 => nrel_main_idtf:
 	[Предметная область текстов языка PFC]
 	(* <- lang_ru;; *);
+	[Subject area of ​​PFC language texts]
+	(* <- lang_en;; *);
+	[Предметна область текстів мови PFC]
+	(* <- lang_uk;; *);
 <- subject_domain;
 <- sc_node_struct;
 <- structure;
@@ -34,6 +38,10 @@ pfc_element_text
 => nrel_main_idtf:
 	[изображение элемента языка PFC]
 	(* <- lang_ru;; *);
+	[PFC language element image]
+	(* <- lang_en;; *);
+	[зображення елемента мови PFC]
+	(* <- lang_uk;; *);
 => nrel_strict_inclusion: 
 	procedure_execution_element_text;
 	allocation_element_text;
@@ -51,6 +59,12 @@ pfc_element_text
 		-> rrel_example: 
 			[Изображение элемента языка PFC — изображение графического примитива, относящегося к языку PFC.]
 			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[PFC element image - image of a graphics primitive related to the PFC language.]
+			(* <- lang_en;; *);;
+		-> rrel_example: 
+			[Зображення елемента мови PFC - зображення графічного примітиву, що стосується мови PFC.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -59,6 +73,10 @@ procedure_execution_element_text
 => nrel_main_idtf:
 	[изображение элемента выполнения процедуры]
 	(* <- lang_ru;; *); 
+	[an image of a procedure execution element]
+	(* <- lang_en;; *);
+	[зображення елемента виконаних процедур]
+	(* <- lang_uk;; *);
 => nrel_strict_inclusion: 
 	procedure_starting_text;
 	starting_of_sequence_execution_choice_text;
@@ -74,8 +92,14 @@ procedure_execution_element_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение элемента выполнения процедуры — изображение графического примитива, связанного с этапом выполнения 			процедурного элемента.]
+			[Изображение элемента выполнения процедуры — изображение графического примитива, связанного с этапом выполнения 				процедурного элемента.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Image of a procedure execution element - an image of a graphical primitive associated with the execution stage of 			a procedural element.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення елемента виконаних процедур - зображення графічного оформлення, пов'язаного з етапом виконання 			процедурних елементів.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -84,6 +108,10 @@ allocation_element_text
 => nrel_main_idtf:
 	[изображение элемента размещения ресурсов]
 	(* <- lang_ru;; *);
+	[resource allocation item image]
+	(* <- lang_en;; *);
+	[зображення елемента розподілу ресурсів]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/allocation_element_text.png";
 <- rrel_key_sc_element:
@@ -94,8 +122,14 @@ allocation_element_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение элемента размещения ресурсов — изображение овала, идентификатором* которого является спецификация ресурса.]
+			[Изображение элемента размещения ресурсов — изображение овала, идентификатором* которого является спецификация 			ресурса.]
 			(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Resource allocation element image - an oval image, the identifier* of which is the resource specification.]
+			(* <- lang_en;; *);;
+		-> rrel_example: 
+			[Зображення елемента розміщення ресурсів - зображення овала, ідентифікатор* якого є специфікацією ресурсів.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -104,6 +138,10 @@ nesting_of_procedural_element_text
 => nrel_main_idtf:
 	[изображение вложенности процедурного элемента]
 	(* <- lang_ru;; *);
+	[nesting image of a procedural element]
+	(* <- lang_en;; *);
+	[зображення вкладеності процедурного елемента]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -112,8 +150,14 @@ nesting_of_procedural_element_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение вложенности процедурного элемента — изображение плюса, находящееся внутри правого выделенного обратного от 			наблюдателя прямого угла изображения процедурного элемента и касающегося границы этого выделенного угла.]
+			[Изображение вложенности процедурного элемента — изображение плюса, находящееся внутри правого выделенного 			обратного от наблюдателя прямого угла изображения процедурного элемента и касающегося границы этого выделенного 				угла.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An image of a nesting of a procedural element is an image of a plus located inside the right selected right 				corner of the image of a procedural element opposite from the observer and touching the border of this selected 				corner.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення вкладеності процедурного елемента - зображення плюса, що виявляється всередині правого виделеного 				образу від спостерігача прямого угла зображення процедурного елемента та обгрунтування границь цього виробленого 				угла.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -122,6 +166,10 @@ synchronization_element_text
 => nrel_main_idtf:
 	[изображение элемента синхронизации]
 	(* <- lang_ru;; *);
+	[sync item image]
+	(* <- lang_en;; *);
+	[зображення елементів синхронізації]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/synchronization_element_text.png";
 <- rrel_key_sc_element:
@@ -132,8 +180,14 @@ synchronization_element_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение элемента синхронизации — изображение прямоугольника, смежного изображению линейного примитива, являющегося 			высотой прямоугольного примитива процедурного элемента.]
+			[Изображение элемента синхронизации — изображение прямоугольника, смежного изображению линейного примитива, 			являющегося высотой прямоугольного примитива процедурного элемента.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Synchronization element image - the image of a rectangle adjacent to the image of a linear primitive, which is 				the height of a rectangular procedural element primitive.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення елемента синхронізації - зображення прямоугольника, сформованого зображення лінійного примітиву, що 				створює висоту прямокутного примитива процедурного елемента.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -142,6 +196,10 @@ procedural_element_text
 => nrel_main_idtf:
 	[изображение процедурного элемента]
 	(* <- lang_ru;; *); 
+	[image of a procedural element]
+	(* <- lang_en;; *); 
+	[зображення процедурного елемента]
+	(* <- lang_uk;; *); 
 => nrel_strict_inclusion:
 	phase_text;
 	operation_text;
@@ -155,8 +213,14 @@ procedural_element_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение процедурного элемента — изображение прямоугольного примитива, количество выделенных прямых углов которого 				указывает на позицию процедурного элемента в процедурной иерархии.]
+			[Изображение процедурного элемента — изображение прямоугольного примитива, количество выделенных прямых углов 				которого указывает на позицию процедурного элемента в процедурной иерархии.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An image of a procedural element is an image of a rectangular primitive, the number of selected right corners of 				which indicates the position of the procedural element in the procedural hierarchy.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення процедурного елемента - зображення прямокутного залучення, кількість вироблених прямих углів якого 				відображає позицію процедурного елемента в процедурній ієрархії.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -165,6 +229,10 @@ connection_text
 => nrel_main_idtf:
 	[изображение связи]
 	(* <- lang_ru;; *); 
+	[link image]
+	(* <- lang_en;; *); 
+	[зображення зв'язку]
+	(* <- lang_uk;; *); 
 => nrel_strict_inclusion: 
 	implisit_transition_text;
 	explicit_transition_text;
@@ -180,6 +248,12 @@ connection_text
 		-> rrel_example: 
 			[Изображение связи — изображение линейного примитива, инцидентного изображениям элементов языка PFC.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Link Image - an image of a linear primitive incident to the PFC language element images.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Ізображення зв'язків - зображення лінійного примітива, індивідуального зображення елементів мови PFC.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -188,6 +262,10 @@ procedure_starting_text
 => nrel_main_idtf:
 	[изображение начала процедуры]
 	(* <- lang_ru;; *);
+	[image of the beginning of the procedure]
+	(* <- lang_en;; *);
+	[зображення початку процедур]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/starting_procedure_text.png";
 <- rrel_key_sc_element:
@@ -198,8 +276,14 @@ procedure_starting_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение начала процедуры — изображение равнобедренного треугольника, общая вершина боковых сторон которого 			указывает в сторону наблюдателя.]
+			[Изображение начала процедуры — изображение равнобедренного треугольника, общая вершина боковых сторон которого 				указывает в сторону наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[The image of the beginning of the procedure is an image of an isosceles triangle, the common vertex of the 			lateral sides of which points towards the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення процедур початку - зображення рівнобедреного треугольника, загальна вершина бокових сторон якого 				показує в стороні спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -208,6 +292,10 @@ starting_of_sequence_execution_choice_text
 => nrel_main_idtf:
 	[изображение начала выбора последовательности выполнения]
 	(* <- lang_ru;; *);
+	[image of the beginning of the selection of the execution sequence]
+	(* <- lang_en;; *);
+	[зображення початку вибору послідовності виконання]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/starting_of_sequence_execution_choice_text.png";
 <- rrel_key_sc_element:
@@ -221,6 +309,13 @@ starting_of_sequence_execution_choice_text
 			[Изображение начала выбора последовательности выполнения — множество изображений явных и неявных переходов, 
 			инцидентных изображению одной и той же точки и указывающих в сторону наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[The image of the beginning of the selection of the execution sequence - a set of images of explicit and implicit 				transitions, incident to the image of the same point and pointing towards the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення початку вибору послідовності виконання - безліч зображень явних та неявних переходів,
+			інцидентних зображень однієї та тих же точок та виявлення в стороні спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -229,6 +324,10 @@ starting_of_parallel_sequence_execution_text
 => nrel_main_idtf:
 	[изображение начала параллельного выполнения последовательности]
 	(* <- lang_ru;; *);
+	[image of the beginning of parallel execution of a sequence]
+	(* <- lang_en;; *);
+	[зображення початку паралельного виконання виконання послідовностей]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/starting_of_parallel_sequence_execution_text.png";
 <- rrel_key_sc_element:
@@ -239,8 +338,14 @@ starting_of_parallel_sequence_execution_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение начала параллельного выполнения последовательности — множество изображений явных и неявных переходов, 				инцидентных изображению пары параллельных прямых и указывающих в сторону наблюдателя.]
+			[Изображение начала параллельного выполнения последовательности — множество изображений явных и неявных переходов, 			инцидентных изображению пары параллельных прямых и указывающих в сторону наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An image of the beginning of a parallel execution of a sequence is a set of images of explicit and implicit 				transitions incident to the image of a pair of parallel lines and pointing towards the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення початку паралельного виконання наступних послідовностей - безліч зображень явних та неявних переходів, 			індивідуальне зображення парних паралельних прямих та виявляючих у стороні спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -249,6 +354,10 @@ procedure_finishing_text
 => nrel_main_idtf:
 	[изображение конца процедуры]
 	(* <- lang_ru;; *);
+	[image of the end of the procedure]
+	(* <- lang_en;; *);
+	[зображення конца процедури]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/procedure_finishing_text.png";
 <- rrel_key_sc_element:
@@ -261,6 +370,12 @@ procedure_finishing_text
 		-> rrel_example: 
 			[Изображение конца процедуры — изображение равнобедренного треугольника, общая вершина боковых сторон которого 				указывает в сторону, обратную наблюдателю.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[The image of the end of the procedure is an image of an isosceles triangle, the common vertex of the lateral 				sides of which points in the direction opposite to the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення конца процедур - зображення рівнобедренного треугольника, загальна вершина бокових сторон якого 			показує в сторону, обратне спостереження.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -269,6 +384,10 @@ finishing_of_parallel_sequence_execution_text
 => nrel_main_idtf:
 	[изображение конца параллельного выполнения последовательности]
 	(* <- lang_ru;; *);
+	[image of the end of parallel execution of a sequence]
+	(* <- lang_en;; *);
+	[зображення конца паралельного виконання виконання послідовностей]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/finishing_of_parallel_sequence_execution_text.png";
 <- rrel_key_sc_element:
@@ -281,6 +400,12 @@ finishing_of_parallel_sequence_execution_text
 		-> rrel_example: 
 			[Изображение конца параллельного выполнения последовательности — множество изображений явных и неявных переходов, 				инцидентных изображению пары параллельных прямых и указывающих в сторону, обратную наблюдателю.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An image of the end of a parallel execution of a sequence is a set of images of explicit and implicit transitions 			incident to the image of a pair of parallel straight lines and pointing in the direction opposite to the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення конци паралельного виконання наступних послідовностей - безліч зображень явних та неявних переходів, 				індекційне зображення пари паралельних прямих та указівних у сторону, обратне спостереження.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -289,6 +414,10 @@ finishing_of_sequence_execution_choice_text
 => nrel_main_idtf:
 	[изображение конца выбора последовательности выполнения]
 	(* <- lang_ru;; *);
+	[image of the end of the run sequence selection]
+	(* <- lang_en;; *);
+	[зображення конца вибору послідовності виконання]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/finishing_of_sequence_execution_choice_text.png";
 <- rrel_key_sc_element:
@@ -299,8 +428,14 @@ finishing_of_sequence_execution_choice_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение конца выбора последовательности выполнения — множество изображений явных и неявных переходов, инцидентных 				изображению одной и той же точки и указывающих в сторону, обратную наблюдателю.]
+			[Изображение конца выбора последовательности выполнения — множество изображений явных и неявных переходов, 			инцидентных изображению одной и той же точки и указывающих в сторону, обратную наблюдателю.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[The image of the end of the selection of the execution sequence is a set of images of explicit and implicit 				transitions incident to the image of the same point and pointing in the direction opposite to the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення конци вибору послідовності виконання - безліч зображень явних та неявних переходів, індексне 				зображення одного і тих же точок та виявлення в стороні, обратне спостереження.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -309,6 +444,10 @@ phase_text
 => nrel_main_idtf:
 	[изображение фазы]
 	(* <- lang_ru;; *);
+	[phase image]
+	(* <- lang_en;; *);
+	[зображення фази]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/phase_text.png";
 <- rrel_key_sc_element:
@@ -321,6 +460,12 @@ phase_text
 		-> rrel_example: 
 			[Изображение фазы — изображение прямоугольного примитива с выделенным левым прямым углом, обратном от наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Phase image - an image of a rectangular primitive with a selected left right angle, opposite from the observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення фази - зображення прямоугольного примітива з виделеним левим прямим углом, обратним від спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -329,6 +474,10 @@ operation_text
 => nrel_main_idtf:
 	[изображение операции]
 	(* <- lang_ru;; *);
+	[operation image]
+	(* <- lang_en;; *);
+	[зображення операцій]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/operation_text.png";
 <- rrel_key_sc_element:
@@ -339,8 +488,14 @@ operation_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение операции — изображение прямоугольного примитива с выделенными левым и правым прямыми углами, обратными от 				наблюдателя.]
+			[Изображение операции — изображение прямоугольного примитива с выделенными левым и правым прямыми углами, 				обратными от наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Operation image - an image of a rectangular primitive with selected left and right right angles opposite to the 				observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення операцій - зображення прямоугольного примітиву з виделеними левими та правими прямими углами, 				обратними від спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -349,6 +504,10 @@ unit_procedure_text
 => nrel_main_idtf:
 	[изображение процедуры технологической установки]
 	(* <- lang_ru;; *);
+	[process installation procedure image]
+	(* <- lang_en;; *);
+	[зображення процедур технологічної установки]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/unit_procedure_text.png";
 <- rrel_key_sc_element:
@@ -359,8 +518,14 @@ unit_procedure_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение процедуры технологической установки — изображение прямоугольного примитива с выделенными левым и правым 				прямыми углами, обратными от наблюдателя, и выделенным правым прямым углом, направленным в сторону наблюдателя.]
+			[Изображение процедуры технологической установки — изображение прямоугольного примитива с выделенными левым и 				правым прямыми углами, обратными от наблюдателя, и выделенным правым прямым углом, направленным в сторону 				наблюдателя.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An image of a technological installation procedure is an image of a rectangular primitive with highlighted left 				and right right angles opposite from the observer, and highlighted right right angles directed towards the 			observer.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення процедур технологічної установки - зображення прямокутного примітиву з виделеними левими та правими 				прямими углами, обратними від спостерігача, та виделеним правим прямим углом, створеним у стороні спостерігача.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -369,6 +534,10 @@ procedure_text
 => nrel_main_idtf:
 	[изображение процедуры]
 	(* <- lang_ru;; *);
+	[procedure picture]
+	(* <- lang_en;; *);
+	[процедури зображення]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/procedure_text.png";
 <- rrel_key_sc_element:
@@ -381,6 +550,12 @@ procedure_text
 		-> rrel_example: 
 			[Изображение процедуры — изображение прямоугольного примитива со всеми выделенными прямыми углами.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[The procedure image is an image of a rectangular primitive with all selected right corners.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення процедур - зображення прямоугольного примітива з усіма виделеними прямими углами.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -389,6 +564,10 @@ implisit_transition_text
 => nrel_main_idtf:
 	[изображение неявного перехода]
 	(* <- lang_ru;; *);
+	[implicit transition image]
+	(* <- lang_en;; *);
+	[зображення неявного переходу]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/implisit_transition_text.png";
 <- rrel_key_sc_element:
@@ -401,6 +580,12 @@ implisit_transition_text
 		-> rrel_example: 
 			[Изображение неявного перехода — изображение связи, не пересекаемое изображением двух параллельных прямых.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[An implicit transition image is an image of a link that is not intersected by an image of two parallel lines.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення неявного переходу - зображення зв'язків, не пересекаємо зображення двох паралельних прямих.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -409,6 +594,10 @@ explicit_transition_text
 => nrel_main_idtf:
 	[изображение явного перехода]
 	(* <- lang_ru;; *);
+	[explicit transition image]
+	(* <- lang_en;; *);
+	[зображення явного переходу]
+	(* <- lang_uk;; *);
 => nrel_idtf:
 	"file://images/explicit_transition_text.png";
 <- rrel_key_sc_element:
@@ -421,6 +610,12 @@ explicit_transition_text
 		-> rrel_example: 
 			[Изображение явного перехода — изображение связи, пересекаемое изображением двух параллельных прямых.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Explicit transition image - an image of a link intersected by an image of two parallel lines.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Изображение явного переходу - зображення зв'язків, пересекаемое зображення двома паралельними прямими.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -429,6 +624,10 @@ one_way_link_text
 => nrel_main_idtf:
 	[изображение односторонней ссылки]
 	(* <- lang_ru;; *);
+	[one-way link image]
+	(* <- lang_en;; *);
+	[зображення односторонньої посилання]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -439,6 +638,12 @@ one_way_link_text
 		-> rrel_example: 
 			[Изображение односторонней ссылки — изображение связи, инцидентное изображениям двух элементов синхронизации.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Зображення односторонніх посилань - зображення зв'язків, індивідуальне зображення двох елементів синхронізації.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення односторонніх посилань - зображення зв'язків, індивідуальне зображення двох елементів синхронізації.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -447,6 +652,10 @@ two_way_link_text
 => nrel_main_idtf:
 	[изображение двусторонней ссылки]
 	(* <- lang_ru;; *);
+	[two-way link image]
+	(* <- lang_en;; *);
+	[зображення двосторонніх посилань]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -455,8 +664,14 @@ two_way_link_text
 		...
 		(*
 		-> rrel_example: 
-			[Изображение двусторонней ссылки — изображение связи, инцидентное изображению элемента синхронизации с одной стороны, и 			изображению стрелки, указывающей направление синхронизации, с другой стороны.]
+			[Изображение двусторонней ссылки — изображение связи, инцидентное изображению элемента синхронизации с одной 				стороны, и изображению стрелки, указывающей направление синхронизации, с другой стороны.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Two-way link image - a link image incidental to the sync element on one side and the sync direction arrow on the 				other side.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Зображення двосторонніх посилань - зображення зв'язків, ідентичне зображення зображень елементів синхронізації з 				однієї сторони, та зображення стрілок, що виконують створення синхронізації, з інших сторін.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
 
@@ -465,6 +680,10 @@ text_signature
 => nrel_main_idtf:
 	[подпись к изображению*]
 	(* <- lang_ru;; *);
+	[image caption*]
+	(* <- lang_en;; *);
+	[підпис до зображення*]
+	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
 	(*
@@ -473,7 +692,13 @@ text_signature
 		(*
 		<- explanation;;
 		-> rrel_example: 
-			[Подпись к изображению* — бинарное отношение, первым компонентом связок которого является знак изображения процедурного 			элемента, а вторым - знак файла, содержащего некоторое текстовое пояснение к изображению процедурного элемента.]
+			[Подпись к изображению* — бинарное отношение, первым компонентом связок которого является знак изображения 			процедурного элемента, а вторым - знак файла, содержащего некоторое текстовое пояснение к изображению процедурного 			элемента.]
 			(* <- lang_ru;; *);;
+		-> rrel_example:
+			[Image caption* is a binary relation, the first component of the bundles of which is the sign of the image of the 				procedural element, and the second is the sign of the file containing some textual explanation to the image of the 			procedural element.]
+			(* <- lang_en;; *);;
+		-> rrel_example:
+			[Підпис до зображення* - бінарне відношення, першим компонентом зв'язок якого є знак зображення процедурного 				елемента, а другим - знак файлу, що містить деякий текстове пояснення до зображення процедурного елемента.]
+			(* <- lang_uk;; *);;
 		*);;
 	*);;
