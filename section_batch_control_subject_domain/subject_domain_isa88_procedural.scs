@@ -1,15 +1,26 @@
 subject_domain_isa88_procedural
 <- sc_node_struct;
-=> nrel_main_idtf: [Предметная область моделей процедурного управления оборудованием рецептурного производства] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Subject domain of procedural control models of batch manufacturing enterprises] (* <- lang_en;; *);
-=> nrel_main_idtf: [Предметна область моделей процедур управління устаткуванням рецептурного виробництва] (* <- lang_uk;; *);
+=> nrel_main_idtf: 
+	[Предметная область моделей процедурного управления оборудованием рецептурного производства] (* <- lang_ru;; *);	
+	[Subject domain of procedural control models of batch manufacturing enterprises] (* <- lang_en;; *);
+	[Предметна область моделей процедур управління устаткуванням рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 procedural_element;
 -> rrel_not_maximum_studied_object_class:
-process_cell_procedure; unit_procedure; operation; phase;
-recipe_procedural_element; equipment_procedural_element;
-recipe_procedure; recipe_unit_procedure; recipe_operation; recipe_phase;
-equipment_procedure; equipment_unit_procedure; equipment_operation; equipment_phase;
+process_cell_procedure; 
+unit_procedure; 
+operation; 
+phase;
+recipe_procedural_element; 
+equipment_procedural_element;
+recipe_procedure; 
+recipe_unit_procedure; 
+recipe_operation; 
+recipe_phase;
+equipment_procedure; 
+equipment_unit_procedure; 
+equipment_operation; 
+equipment_phase;
 
 -> rrel_explored_relation:
 nrel_execution_order;
