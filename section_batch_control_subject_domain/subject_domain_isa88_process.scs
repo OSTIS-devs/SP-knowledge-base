@@ -1,12 +1,15 @@
 subject_domain_isa88_process
 <- sc_node_struct;
-=> nrel_main_idtf: [Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
-=> nrel_main_idtf: [Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
-=> nrel_main_idtf: [Предметна область процессных моделей рецептурного виробництва] (* <- lang_uk;; *);
+=> nrel_main_idtf: 
+	[Предметная область процессных моделей рецептурного производства] (* <- lang_ru;; *);
+	[Subject domain of process models of batch manufacturing enterprises] (* <- lang_en;; *);
+	[Предметна область процессных моделей рецептурного виробництва] (* <- lang_uk;; *);
 -> rrel_maximum_studied_object_class:
 process_element;
 -> rrel_not_maximum_studied_object_class:
-process_stage; process_operation; process_action;
+process_stage; 
+process_operation; 
+process_action;
 -> rrel_explored_relation:
 nrel_process_element_link;;
 

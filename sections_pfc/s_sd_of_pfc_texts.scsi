@@ -712,14 +712,14 @@ two_way_link_text
 		*);;
 	*);;
 
-sc_node_norole_relation -> text_signature;;
-text_signature
+sc_node_norole_relation -> nrel_text_signature;;
+nrel_image_signature
 => nrel_main_idtf:
 	[подпись к изображению*]
 	(* <- lang_ru;; *);
-	[Image caption*]
+	[image signature*]
 	(* <- lang_en;; *);
-	[Підпис до зображення*]
+	[пiдпис до зображення*]
 	(* <- lang_uk;; *);
 <- rrel_key_sc_element:
 	...
@@ -740,4 +740,24 @@ text_signature
 			[Підпис до зображення* - бінарне відношення, першим компонентом зв'язок якого є знак зображення процедурного елемента, а другим - знак файлу, що містить деякий текстове пояснення до зображення процедурного елемента. ]
 			(* <- lang_uk;; *);;
 		*);;
+	*);
+=> nrel_first_domain: pfc_element_text;
+=> nrel_second_domain: note_file;
+=> nrel_definitional_domain: ...
+(* 
+	<= nrel_union: ...
+	(* 
+	  	-> pfc_element_text;;
+	   	-> note_file;;
 	*);;
+*);;
+2 <= nrel_measurement: ...
+(*
+	<- sc_node_not_relation;;
+	-> nrel_text_signature;;
+	<- arity;;
+*);;
+oriented_relation -> text_signature;;
+reflexive_relation -|> text_signature;;
+transitive_relation -|> text_signature;;
+symmetric_relation -|> text_signature;;
