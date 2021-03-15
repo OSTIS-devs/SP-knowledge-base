@@ -418,6 +418,7 @@ pfc_relation
 => nrel_main_idtf:
 	[связь языка PFC*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: pfc_element;
 => nrel_strict_inclusion: 
 	nrel_order_of_execution;
 	nrel_synchronization_element_link;
@@ -439,6 +440,7 @@ nrel_order_of_execution
 => nrel_main_idtf:
 	[порядок выполнения*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: pfc_element;
 <= nrel_subdividing:
 {
 	nrel_explicit_transition;
@@ -462,6 +464,7 @@ nrel_synchronization_element_link
 => nrel_main_idtf:
 	[ссылка на элемент синхронизации*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: synchronization_element;
 => nrel_strict_inclusion: 
 	nrel_one_way_link;
 	nrel_two_way_link;
@@ -483,6 +486,7 @@ nrel_one_way_link
 => nrel_main_idtf:
 	[односторонняя ссылка*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: synchronization_element;
 <- rrel_key_sc_element:
 	...
 	(*
@@ -491,7 +495,7 @@ nrel_one_way_link
 		...
 		(*
 		-> rrel_example: 
-			[Односторонняя ссылка* — бинарное ориентированное отношение, первым компонентом связки которого является знак элемента 				синхронизации, со стороны которого осуществляется осуществляется передача материала, вторым - знак элемента 				синхронизации, принимающего этот материал.]
+			[Односторонняя ссылка* — бинарное ориентированное отношение, первым компонентом связки которого является знак элемента 				синхронизации, со стороны которого осуществляется передача материала, вторым - знак элемента 				синхронизации, принимающего этот материал.]
 			(* <- lang_ru;; *);;
 		*);;
 	*);;
@@ -501,6 +505,7 @@ nrel_two_way_link
 => nrel_main_idtf:
 	[двусторонняя ссылка*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: synchronization_element;
 <- rrel_key_sc_element:
 	...
 	(*
@@ -519,6 +524,8 @@ nrel_transition_condition
 => nrel_main_idtf:
 	[условие перехода*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: nrel_explicit_transition;
+=> nrel_second_domain: structure;
 <- rrel_key_sc_element:
 	...
 	(*
@@ -537,6 +544,7 @@ nrel_explicit_transition
 => nrel_main_idtf:
 	[явный переход*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: procedural_element;
 => nrel_idtf:
 	[условный переход*]
 	(* <- lang_ru;; *);
@@ -558,6 +566,7 @@ nrel_implisit_transition
 => nrel_main_idtf:
 	[неявный переход*]
 		(* <- lang_ru;; *);
+=> nrel_first_domain: => nrel_second_domain: procedural_element;
 => nrel_idtf:
 	[безусловный переход*]
 	(* <- lang_ru;; *);

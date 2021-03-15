@@ -465,6 +465,8 @@ text_signature
 => nrel_main_idtf:
 	[подпись к изображению*]
 	(* <- lang_ru;; *);
+=> nrel_first_domain: synchronization_element_text;
+=> nrel_second_domain: file;
 <- rrel_key_sc_element:
 	...
 	(*
