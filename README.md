@@ -8,8 +8,8 @@ The purpose of this project is to **build an ontological model of batch manufact
 
 Improvements of the industrial control level assumes a significant increase in the number of automatic or automated tasks. **This, in turn, calls for automated solutions to intellectual problems, i.e. the use of artificial intelligence technologies**.
 
-Intelletual problems to be solved in the enterprise include:
-* analysis of manufactoring situation (including emergencies);
+Intellectual problems to be solved in the enterprise include:
+* analysis of manufacturing situation (including emergencies);
 * decision-making at different levels;
 * planning behaviour in difficult circumstances;
 * creating and maintaining documentation;
