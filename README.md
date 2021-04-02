@@ -6,15 +6,14 @@ Knowledge base of [ISA-88 standard](http://www.isa-88.com/) powered by [OSTIS te
 
 The purpose of this project is to **build an ontological model of batch manufactoring enterprise to improve industrial control quality of such enterprises and their ability to adapt to a constantly changing environment**.
 
-Improvements of the industrial control level assumes a significant increase in the number of automatic or automated tasks. **This, in turn, calls for automated solutions to intellectual problems, i.e. the use of artificial intelligence technologies**.
+Improvements of the industrial control level assumes a significant increase in the number of automatic or automated tasks. **In turn it calls for automated solutions to intellectual problems, i.e. the use of artificial intelligence technologies**.
 
 Intellectual problems to be solved in the enterprise include:
 * analysis of manufacturing situation (including emergencies);
 * decision-making at different levels;
 * planning behaviour in difficult circumstances;
 * creating and maintaining documentation;
-* training new and current employees;
-* etc.
+* training new and current employees and etc.
 
 Additional information about project you can read here:
 * [English](https://drive.google.com/drive/folders/16n6sTeduw4ehCRdiTJEYZ4sMFfhCLlOP)
@@ -22,7 +21,7 @@ Additional information about project you can read here:
 
 ## Sections information
 
-### Subject domain of batch manufactoring enterprises
+### Subject domain of batch manufacturing enterprises
 * ### Subject domain of physical models of batch manufacturing enterprises
 
   The maximal class of research objects in this specification — **equipment entity**.
