@@ -26,7 +26,15 @@ Additional information about project you can read here:
 
   The maximal class of research objects in this specification — **equipment entity**.
   
-  This specification has seven levels: **enterprise**, **site**, **area**, **process cell**, **unit**, **equipment module**, **control module** and describes **processes**, **procedures**, **equipment**, **control**, etc.
+  Current specification has seven levels:  
+  * Enterprise level — is a largest manufacturing unit, which usually means company as a whole and consists of one or more areas. In our case, we have JSC «Savushkin product» at the interprise level.  
+  * Area level — area boundaries are usually determined based on geographical approach and contains one or more sites.
+  * Site level — as per ISA-88, not every part of an area will be a part of a site. Only those directly related to batch manufacturing process will be considered as a part of a site.
+  * Process cell level — contains one or more train, and the order of the equipment in it called a path.
+  * Units, equipment modules and control modules — lowest three levels of a physical model are discussed together, since, according to ISA-88, process cell can directly contain units, equipment modules, as well as control modules.  
+  
+  This specification describes **processes**, **procedures**, **equipment**, **control**, etc.
+
 
   ![Physical models example](readme_images/physical_models.png?raw=true)
 
